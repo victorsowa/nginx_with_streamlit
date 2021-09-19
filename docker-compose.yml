@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  app1:
+    build: streamlit_apps/app1
+    ports:
+      - "5001:8501"
+  app2:
+    build: streamlit_apps/app2
+    ports:
+      - "5002:8501"
