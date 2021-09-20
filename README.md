@@ -1,5 +1,9 @@
 # nginx_with_streamlit
 
+## Purpose
+
+Create an example where multiple streamlit applications are subdomains of an web-application.
+
 ## Running the example
 
 To run the example first build the docker-compose with  ``docker-compose build`` then run it with ``docker-compose up``.
