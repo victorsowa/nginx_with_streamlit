@@ -8,3 +8,10 @@ services:
     build: streamlit_apps/app2
     ports:
       - "5002:8501"
+  nginx:
+    build: nginx_docker
+    ports:
+        - "8080:80"
+    depends_on:
+        - app1
+        - app2

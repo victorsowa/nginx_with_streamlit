@@ -15,4 +15,4 @@ EXPOSE 8501
 COPY --from=builder /install /usr/local
 COPY . .
 
-CMD ["streamlit", "run", "app.py"]
+CMD streamlit run app.py --server.enableCORS=false
