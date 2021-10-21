@@ -21,3 +21,9 @@ Go to http://localhost:8080/ to see the built and running example, `nginx_docker
             proxy_pass http://172.17.0.1:5001/static/;
         }
     ```
+
+- The streamlit applications have ``enableCORS`` set to ``false`` this is done in the Dockerfiles with:
+
+    ```
+        CMD streamlit run app.py --server.enableCORS=false
+    ```
